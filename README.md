@@ -1,3 +1,5 @@
+<img width="1197" alt="Skjermbilde 2023-02-15 kl  16 56 04" src="https://user-images.githubusercontent.com/89253171/219082398-6332fc87-e0fe-4fb4-aed8-4cbe8603c92d.png">
+
 🧳 Mia and Bob's Travel Blog 🌍
 
 This is a travel blog called "Mia and Bob's Travel Blog". It was created as part of a semester exam for the years 2021-2022. The task was to create a blog with a minimum of five pages:
