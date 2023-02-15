@@ -1,67 +1,37 @@
-# Project Exam 
+🧳 Mia and Bob's Travel Blog 🌍
 
-![this is an image](https://roaring-marzipan-949090.netlify.app//image/screenshot.png)
+This is a travel blog called "Mia and Bob's Travel Blog". It was created as part of a semester exam for the years 2021-2022. The task was to create a blog with a minimum of five pages:
 
+🏠 Home Page
+The home page features a 'Latest Posts' section that uses a carousel (slider) for users to click to view more posts. The carousel displays four posts by default. Users can click an arrow on the right to view the next four posts and click it again to view the next four posts. Users can also click back to view the results they had previously seen.
 
-## Description
-This was my semester exam for the years 2021-2022. I was assigned with making a blog. I could choose myself what kind of blog and content. I decided on making a travel blog. The page had certain criteria that had to be met:
-You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+🤔 About Page
+The about page provides information about Mia and Bob, the creators of the blog.
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+📜 List of Blog Posts
+The list of blog posts page shows the first ten blog posts. Users can click to view more results, which then show underneath the first ten blog posts.
 
-### Blog Page
+📄 Blog Post Specific Pages
+The content of the blog specific page is dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page changes based on the blog that has been clicked on, e.g., "My Blog | An Article I Wrote".
+If images on the blog post page are clicked, a modal appears, giving the user a bigger view of that image. Clicking outside the image hides the modal.
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+📩 Contact Page
+The contact page includes four text boxes:
 
-### Blog Specific Page
+    Name (Should be more than 5 characters long)
+    Email address (Must be a valid email address)
+    Subject (Should be more than 15 characters long)
+    Message content (Should be more than 25 characters long)
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+JavaScript is used for validation, and error messages are displayed if the values in the text boxes do not meet the requirements.
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+🌐 WordPress
+The content for the website is stored on a WordPress installation used as a Headless CMS. The WordPress site provides an API and adds content for the blog. The website is built using HTML, CSS, and JavaScript, making a call to the WordPress REST API to fetch the data.
 
-### Contact page
-
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
-
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
-
-### WordPress
-
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+To run the project, simply clone or fork this repository
+To run the blog, use liveserver.
 
 
-## Built With
-
-- HTML5
-- CSS
-- JavaScript 
-
-## Getting Started
-
-### Installing
-
-1. Clone the repo:
-
-```bash
-git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-Liisagrant.git
-```
-
-### Running
-Run with liveserver
-
-## To Do
--Improve slider
-
-
-## Contact
-[My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
+😂 Silly Joke
+Why did the tomato turn red?
+Because it saw the salad dressing!
