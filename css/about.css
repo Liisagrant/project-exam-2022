@@ -1,0 +1,64 @@
+.about-us-mia,
+.about-us-bob {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+}
+
+.about-us-mia h2,
+.about-us-bob h2,
+.about-us-what-we-care-about h2 {
+  margin: 16px 0;
+}
+
+.about-us-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+.about-us-image-box img {
+  height: 200px;
+  border-radius: 15%;
+}
+
+.about-us-mia-text,
+.about-us-what-we-care-about {
+  margin: 16px;
+}
+
+.about-us-what-we-care-about-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-what-we-care-about img {
+  height: 200px;
+  margin: 8px auto;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 426px) {
+  .about-us-what-we-care-about img {
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 787px) {
+  .about-us-mia {
+    flex-direction: row;
+  }
+  .about-us-bob {
+    flex-direction: row-reverse;
+  }
+
+  .about-us-image-box img {
+    height: 240px;
+  }
+
+  .about-us-what-we-care-about-img-box {
+    flex-direction: row;
+  }
+}

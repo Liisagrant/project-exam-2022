@@ -1,0 +1,99 @@
+.section-contact,
+.icon-box-success {
+  display: flex;
+  justify-content: center;
+}
+
+.section-contact form p {
+  margin: 4px;
+}
+
+.container-form h1 {
+  text-align: center;
+  margin: 8px;
+}
+
+.success {
+  text-align: center;
+  display: none;
+  margin: 200px 50px;
+}
+
+.success h3 {
+  color: var(--main-green-colour);
+}
+
+.success h3,
+.success h4 {
+  margin: 16px 8px;
+}
+
+.success a {
+  text-decoration: underline;
+}
+
+.success .fa-facebook {
+  color: #4267b2;
+}
+
+.success .fa-instagram {
+  color: #833ab4;
+}
+
+.success .fa-snapchat {
+  color: #fffc00;
+}
+
+.success .fab p:hover {
+  color: var(--main-green-colour);
+}
+
+.container-form {
+  background-color: var(--main-green-light-colour);
+  margin: 48px 16px;
+  padding: 16px;
+  border-radius: 15px;
+  max-width: 500px;
+  border: 2px solid var(--main-green-colour);
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+input {
+  display: inline;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--main-green-colour);
+  margin: 4px 0 8px 0;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 2px solid var(--main-yellow-color);
+}
+
+textarea {
+  height: 150px;
+}
+
+form button {
+  margin: 16px auto;
+  width: 200px;
+}
+
+.error-form span {
+  display: none;
+  color: var(--main--error-colour);
+  font-size: 12px;
+}

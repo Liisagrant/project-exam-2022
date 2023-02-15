@@ -1,0 +1,115 @@
+.the-post-box {
+  margin: 16px 16px 100px;
+}
+
+.the-post-box-image {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 300px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.the-post-box-image img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.text-blog-post {
+  margin: 16px;
+}
+
+.the-post-box p {
+  margin: 8px;
+}
+
+.modal {
+  display: none;
+  flex-direction: column;
+  background: rgb(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s ease-out;
+  pointer-events: all;
+  overflow: hidden;
+}
+
+.full-img {
+  position: absolute;
+  height: 70%;
+  top: 40%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+
+.full-img {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal p {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
+.close {
+  position: relative;
+  top: 10%;
+  left: 90%;
+  z-index: 1;
+  font-size: 35px;
+  color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+  .full-img {
+    height: 90%;
+  }
+
+  .modal p {
+    bottom: 25%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .full-img {
+    height: 90%;
+  }
+
+  .modal p {
+    bottom: 25%;
+  }
+}
+
+@media screen and (min-width: 787px) {
+  .full-img {
+    height: 120%;
+    top: 50%;
+  }
+
+  .modal p {
+    bottom: 20%;
+    background: black;
+    padding: 8px;
+    border-radius: 10px;
+  }
+}

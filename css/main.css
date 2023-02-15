@@ -1,0 +1,156 @@
+:root {
+  --main-letter-colour: #444444;
+  --main-green-colour: #68a691;
+  --main-green-light-colour: #d0e9e2;
+  --main-dark-colour: #868181;
+  --main--error-colour: #962e2e;
+  --main-yellow-color: #ffd670;
+  --main-pink-color: #c2949e;
+  --gradient: linear-gradient(
+    90deg,
+    #f0a1dc,
+    #eba3e5,
+    #eeabf7,
+    #e4c6db,
+    #ddf08a,
+    #eccd93
+  );
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 22px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: var(--main-letter-colour);
+}
+
+p,
+a,
+span {
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 16px;
+  color: var(--main-letter-colour);
+}
+
+.green {
+  background-color: var(--main-green-colour);
+}
+
+.page-title h1 {
+  padding: 16px 0;
+  margin: 18px 8px;
+  color: var(--main-letter-colour);
+}
+
+.container {
+  max-width: 987px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+button {
+  padding: 8px 16px;
+  border: 2px solid var(--main-dark-colour);
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #444444;
+  text-align: center;
+  transition: all 0.2s;
+  box-shadow: 0 10px 27px #0000004d;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: var(--main-green-colour);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  color: var(--main-letter-colour);
+  font-family: "Roboto Slab", serif;
+}
+
+input {
+  padding: 4px;
+  width: 280px;
+  border-radius: 5px;
+  border: 1px solid var(--main-green-colour);
+  margin: 4px;
+}
+
+.this-page {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.breadcrumbs a {
+  list-style: none;
+  color: var(--main-letter-colour);
+  margin: 8px;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs a:hover {
+  color: var(--main-green-colour);
+}
+
+.breadcrumbs li + li::before {
+  padding: 4px;
+  content: "/";
+}
+
+.this {
+  text-decoration: underline;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.loader img {
+  height: 100px;
+}
+
+.error-text p,
+.error-text-the-blog p {
+  text-align: center;
+}
+
+.error-text-the-blog p {
+  margin: 100px 0 400px;
+}

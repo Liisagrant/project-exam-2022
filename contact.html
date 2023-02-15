@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Contact us, We want to get in touch. Please contact us for anything. Traveling, food, adventure, trips, and local tips are very helpful."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Mukta+Vaani&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Mukta+Vaani&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact us || Mia and Bob´s Travel Blog</title>
+    <script src="js/nav.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <link rel="stylesheet" href="/css/nav-footer.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="green">
+      <div class="header-all-pages">
+        <nav class="container">
+          <!-- Desktop -->
+          <a href="/" class="logo">
+            <img
+              src="/media/logo.svg"
+              alt="Logo for blog. text saying: mia and bobs travel blog. In the middle a van car in colour green."
+            />
+          </a>
+          <div class="links">
+            <ul>
+              <li><a href="/the-blog.html">The Blog</a></li>
+              <li><a href="#" class="this-page">Contact</a></li>
+              <li><a href="/about.html">About</a></li>
+            </ul>
+            <strong id="mobile-menu-btn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </strong>
+          </div>
+        </nav>
+        <!-- Mobile -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="/the-blog.html">The Blog</a></li>
+            <li><a href="#" class="this-page">Contact</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </section>
+    <main class="container">
+      <section class="section-contact">
+        <div class="success">
+          <h3>Thank you for your message! Let`s be friends</h3>
+          <div class="icon-box-success">
+            <i class="fab fa-snapchat"><span>snapchat</span></i>
+            <i class="fab fa-instagram"><span>Instagram</span></i>
+            <i class="fab fa-facebook"><span>Facebook</span></i>
+          </div>
+          <h4>
+            Return to homepage <a href="/index.html"><h4>here!</h4></a>
+          </h4>
+        </div>
+        <form id="contact-form" class="container-form">
+          <h1>Want to talk to us?</h1>
+          <p>Please contact us if you have any feedback, questions or tips!</p>
+          <div>
+            <label for="Name">
+              Name: (Minimum 5 characters):
+              <input
+                type="text"
+                name="fullname"
+                id="name"
+                placeholder="please enter your name"
+              />
+              <span class="error-form" id="name-error">
+                <span>Please enter your name</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label for="email">
+              E-mail: (Valid e-mail is required)
+              <input
+                type="text"
+                name="e-mail"
+                id="email"
+                placeholder="please enter your e-mail"
+              />
+              <span class="error-form" id="email-error">
+                <span>Please enter a valid e-mail</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label for="subject">
+              Subject: (Minimum 15 characters)
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Must be longer than 15 characters"
+              />
+              <span class="error-form" id="subject-error">
+                <span>Please enter subject</span>
+              </span>
+            </label>
+          </div>
+          <div>
+            <label for="message">
+              Message: (Minimum 25 characters)
+              <textarea type="text" name="message" id="message"></textarea>
+              <span class="error-form" id="message-error">
+                <span>Please write a message</span>
+              </span>
+            </label>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <a href="/" class="logo">
+          <img
+            src="/media/logo.svg"
+            alt="Logo for blog. text saying: mia and bobs travel blog. In the middle a van car in colour green."
+          />
+        </a>
+        <div class="content-footer">
+          <div class="menu-box">
+            <a href="/the-blog.html">The Blog</a>
+            <a href="#">Contact</a>
+            <a href="/about.html">About</a>
+          </div>
+          <div class="icon-box">
+            <i class="fab fa-snapchat"><span>snapchat</span></i>
+            <i class="fab fa-instagram"><span>Instagram</span></i>
+            <i class="fab fa-facebook"><span>Facebook</span></i>
+          </div>
+          <div class="copyright-box">
+            <p>&copy; Lisa Grant 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

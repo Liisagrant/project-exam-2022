@@ -1,0 +1,324 @@
+.hero-banner-background-image-homepage {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background: rgb(128 128 128 /23%);
+}
+
+.slideshow-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+  -webkit-transition: opacity 4s ease-in-out;
+  -moz-transition: opacity 4s ease-in-out;
+  -o-transition: opacity 4s ease-in-out;
+}
+
+.slideshow-img span {
+  display: none;
+}
+
+.img1,
+.img2,
+.img3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url("/image/lake-herobanner.jpg");
+  background-position: 60% 40%;
+}
+
+.img2 {
+  background-image: url("/image/hike-herobanner.jpg");
+  background-position: 10% 90%;
+}
+
+.img3 {
+  background-image: url("/image/beach-herobanner.jpg");
+  background-position: 20% 80%;
+}
+
+.hero-banner-text h1 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-shadow: #1f1d1f 5px 5px 7px;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 50%;
+  text-align: center;
+  padding-bottom: 250px;
+}
+
+.subscribe-newsletter-homepage {
+  margin: 100px auto;
+}
+
+.welcome-text-homepage,
+.travel-hacks-homepage-text {
+  margin: 100px 16px;
+}
+
+.welcome-text-homepage h2,
+.travel-hacks-homepage-text h2 {
+  margin: 16px 0;
+}
+
+.subscribe-box-homepage {
+  background-color: var(--main-green-light-colour);
+}
+
+.subscribe-newsletter-homepage {
+  height: 320px;
+  background-color: var(--main-green-light-colour);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000066;
+}
+
+.modal-box {
+  color: var(--main-dark-colour);
+  background: #ddd;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: modal-animation 4s infinite;
+  border: 2px solid var(--main-pink-color);
+  max-width: 500px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px;
+  margin: 16px auto;
+}
+
+.img-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/image/modal-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid var(--main-pink-color);
+  border-bottom: none;
+  height: 400px;
+  opacity: 80%;
+}
+
+.img-modal p,
+.img-modal span {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  background-color: #00000068;
+}
+
+.img-modal p {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  background-color: #00000068;
+}
+
+.img-modal span {
+  width: 100%;
+  padding: 20px;
+}
+
+@keyframes modal-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.carousel-box h2 {
+  margin: 16px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+}
+
+.img-carousel {
+  object-fit: cover;
+  height: 400px;
+  width: 290px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.text-slide-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-back,
+#btn-next {
+  position: absolute;
+  border: 2px solid var(--main-green-colour);
+  top: 50%;
+  opacity: 80%;
+  transform: translateY(-50%);
+}
+
+#btn-back img,
+#btn-next img {
+  height: 30px;
+}
+
+#btn-next {
+  right: -2%;
+}
+
+#btn-back {
+  left: -2%;
+}
+
+#btn-back:hover,
+#btn-next:hover {
+  background-color: var(--main-green-light-colour);
+}
+
+.subscribe-newsletter-content {
+  flex-direction: column;
+  margin: 16px auto;
+  padding: 8px;
+}
+
+.subscribe-newsletter-content form button {
+  margin: 8px auto;
+}
+
+.subscribe-newsletter-content h2,
+.subscribe-newsletter-content p {
+  text-align: center;
+}
+
+.subscribe-newsletter-content h2 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 50px;
+  padding: 4px;
+}
+
+.subscribe-newsletter-content p {
+  padding: 2px;
+}
+
+.error-input-name p,
+.error-input-email p {
+  color: var(--main--error-colour);
+  font-size: 12px;
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .hero-banner-text h1 {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .hero-banner-text h1 {
+    margin-top: 40%;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .hero-banner-text h1 {
+    font-size: 50px;
+    margin-top: 15%;
+    padding-bottom: 300px;
+  }
+
+  .img-carousel {
+    margin: 18px;
+  }
+
+  #btn-next {
+    right: -1%;
+  }
+
+  #btn-back {
+    left: -1%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-banner-text h1 {
+    padding-bottom: 250px;
+  }
+
+  .carousel-container {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 987px) {
+  .hero-banner-text h1 {
+    margin-top: 20%;
+    padding-bottom: 200px;
+  }
+
+  .carousel-container {
+    width: 987px;
+  }
+  .img-carousel {
+    margin: 10px;
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  #btn-next {
+    right: -5%;
+  }
+
+  #btn-back {
+    left: -5%;
+  }
+}

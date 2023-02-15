@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="All about travel.A blog to help you know where to go on your next travel adventure. we visit all the best spots. Info, travel, adventure, trips"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Mukta+Vaani&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Mukta+Vaani&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home || Mia and Bob`s Travel Blog</title>
+    <script src="js/nav.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="/css/nav-footer.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="herobanner-background-image-homepage">
+        <div
+          class="slideshow-img img1"
+          role="img"
+          aria-label="image of a lake with purple flowers and a blue and purple evening sky"
+        ></div>
+        <div
+          class="slideshow-img img2"
+          role="img"
+          aria-label="image of a person standing on a mountain with yellow, pink and blue sky"
+        ></div>
+        <div
+          class="slideshow-img img3"
+          role="img"
+          aria-label="image of a beach with waves splashing in"
+        ></div>
+        <!-- Desktop -->
+        <nav class="container">
+          <a href="/" class="logo">
+            <img
+              src="/media/logo.svg"
+              alt="Logo for blog. text saying: mia and bobs travel blog. In the middle a van car in colour green."
+            />
+            <span>Mia and Bob</span>
+          </a>
+          <div class="links">
+            <ul>
+              <li><a href="/the-blog.html">The Blog</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/about.html">About</a></li>
+            </ul>
+            <strong id="mobile-menu-btn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </strong>
+          </div>
+        </nav>
+        <hr />
+        <!-- Mobile -->
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="/the-blog.html">The Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="hero-banner-text container">
+          <h1>"Collect Moments, Not Things"</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="container">
+        <div class="welcome-text-homepage">
+          <h2>Welcome to our blog</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+            nisi delectus perferendis repellat beatae. Tempore, impedit aliquam
+            harum perferendis excepturi non labore. Error, mollitia placeat
+            eligendi suscipit nisi ducimus asperiores. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Mollitia nisi delectus
+            perferendis repellat beatae. Tempore, impedit aliquam harum
+            perferendis excepturi non labore. Error, mollitia placeat eligendi
+            suscipit nisi ducimus asperiores. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Mollitia nisi delectus perferendis
+            repellat beatae. Tempore, impedit aliquam harum perferendis
+            excepturi non labore. Error, mollitia placeat eligendi suscipit nisi
+            ducimus asperiores. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Mollitia nisi delectus perferendis repellat
+            beatae. Tempore, impedit aliquam harum perferendis excepturi non
+            labore. Error, mollitia placeat eligendi suscipit nisi ducimus
+            asperiores.
+          </p>
+        </div>
+      </article>
+      <section class="container carousel-box">
+        <h2>Our Latest Post</h2>
+        <div class="loader">
+          <img src="/image/loader.gif" alt="A loading pink spinner" />
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-slide"></div>
+        </div>
+        <div class="btn-container-carousel">
+          <button id="btn-back">
+            <img src="/media/arrow-left.svg" alt="arrow right" />
+          </button>
+          <button id="btn-next">
+            <img src="/media/arrow-right.svg" alt="arrow right" />
+          </button>
+        </div>
+      </section>
+      <section class="subscribe-newsletter-homepage">
+        <div class="subscribe-newsletter-content">
+          <h2>Subscribe!</h2>
+          <p>For more inspiration & tips!!</p>
+          <form>
+            <label for="name"> Name:</label>
+            <input type="text" id="name" />
+            <div class="error-input-name"><p>Please enter a name</p></div>
+            <label for="e-mail">E-mail:</label>
+            <input type="text" id="e-mail" />
+            <div class="error-input-email"><p>Please enter a Email</p></div>
+            <button id="modalBTN">Subscribe</button>
+          </form>
+        </div>
+        <div id="modalSubscribe" class="modal">
+          <div class="modal-box">
+            <div class="img-modal">
+              <p>You`r email is added!</p>
+              <span>To close click anywhere on the screen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <article class="container">
+        <div class="travel-hacks-homepage-text">
+          <h2>Let`s talk about travel hacks</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="container">
+        <a href="/" class="logo">
+          <img
+            src="/media/logo.svg"
+            alt="Logo for blog. text saying: mia and bobs travel blog. In the middle a van car in colour green."
+          />
+        </a>
+        <div class="content-footer">
+          <div class="menu-box">
+            <a href="/the-blog.html">The Blog</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">About</a>
+          </div>
+          <div class="icon-box">
+            <i class="fab fa-snapchat"><span>snapchat</span></i>
+            <i class="fab fa-instagram"><span>Instagram</span></i>
+            <i class="fab fa-facebook"><span>Facebook</span></i>
+          </div>
+          <div class="copyright-box">
+            <p>&copy; Lisa Grant 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
